@@ -84,3 +84,41 @@ console.log('19' - '13' + '17'); // 617
 console.log('19' - '13' + 17); // 23
 console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
+
+//// LECTURE: Equality Operators: == vs. ===
+console.log('**LECTURE: Equality Operators: == vs. ===**');
+
+const numNeighbours = Number(
+    prompt('How many neighbour countries does your country have?'),
+);
+
+// if (numNeighbours == 1) {
+//     console.log('Only 1 border!');
+// }
+
+// if (numNeighbours == 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('More than 1 border');
+// }
+
+// numNeighbours = 1 first if block works
+// numNeighbours = 2 and than greater second else if block works
+// numNeighbours = 0 and another thing else block works
+
+// if (numNeighbours == 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('More than 1 border');
+// } else {
+//     console.log('No borders');
+// }
+
+// RESULT
+if (numNeighbours === 1) {
+    console.log('Only 1 border!'); // Because number is not equal string, else block works.We use manuel type conversion
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border');
+} else {
+    console.log('No borders');
+}
