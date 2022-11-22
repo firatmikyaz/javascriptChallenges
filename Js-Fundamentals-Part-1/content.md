@@ -42,3 +42,10 @@
 5. Based on the variables you created, create a new variable 'description'
    which contains a string with this format: 'Portugal is in Europe, and its 11 million
    people speak portuguese'
+
+## LECTURE: LECTURE: Strings and Template Literals
+
+### Your tasks:
+
+1. Recreate the 'description' variable from the last assignment, this time
+   using the template literal syntax

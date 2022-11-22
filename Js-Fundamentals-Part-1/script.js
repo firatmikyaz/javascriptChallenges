@@ -38,7 +38,7 @@ console.log(population); // 23 = 22 + 1
 console.log(population > 6); // true = 22 > 6
 console.log(population < 33); // true = 22 < 33
 
-const description =
+const description1 =
     country +
     ' is in ' +
     continent +
@@ -46,4 +46,10 @@ const description =
     population +
     ' million people speak ' +
     language;
-console.log(description);
+console.log(description1);
+
+//// LECTURE: Strings and Template Literals
+console.log('**LECTURE: Strings and Template Literals**');
+
+const description2 = `${country} is in ${continent}, and its ${population} million people speak ${language};`;
+console.log(description2);
