@@ -67,3 +67,20 @@ if (population > 33) {
         `${country}'s population is ${33 - population} million below average`,
     );
 }
+
+//// LECTURE: Type Conversion and Coercion
+console.log('**LECTURE: Type Conversion and Coercion**');
+
+// My guess
+// '9' - '5';  --> 4
+// '19' - '13' + '17';  --> 617 = 6 + '17'
+// '19' - '13' + 17;  --> 23 = 6 + 17
+// '123' < 57;  --> false
+// 5 + 6 + '4' + 9 - 4 - 2; --> 1143 = 11 + '4' + 3
+
+// Result
+console.log('9' - '5'); // 4
+console.log('19' - '13' + '17'); // 617
+console.log('19' - '13' + 17); // 23
+console.log('123' < 57); // false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143

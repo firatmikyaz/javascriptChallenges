@@ -50,7 +50,7 @@
 1. Recreate the 'description' variable from the last assignment, this time
    using the template literal syntax
 
-## LECTURE: LECTURE: Taking Decisions: if / else Statements
+## LECTURE: Taking Decisions: if / else Statements
 
 ### Your tasks:
 
@@ -60,3 +60,15 @@
    minus the country's population)
 2. After checking the result, change the population temporarily to 13 and then to 130.
    See the different results, and set the population back to original
+
+## LECTURE: Type Conversion and Coercion
+
+### Your tasks:
+
+1. Predict the result of these 5 operations without executing them:
+   '9' - '5';
+   '19' - '13' + '17';
+   '19' - '13' + 17;
+   '123' < 57;
+   5 + 6 + '4' + 9 - 4 - 2;
+2. Execute the operations to check if you were right
