@@ -131,3 +131,27 @@ console.log(myCountry.population);
 
 myCountry['population'] -= 2;
 console.log(myCountry.population);
+
+//// LECTURE: Object Methods
+console.log('**LECTURE: Object Methods**');
+
+const myCountryCopy = {
+    country: 'Turkey',
+    capital: 'Ankara',
+    language: 'turkish',
+    population: 80,
+    neighbours: ['Greece', 'Bulgaria', 'Azerbaijan', 'Georgia'],
+
+    describe: function () {
+        console.log(
+            `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`,
+        );
+    },
+
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+    },
+};
+
+myCountryCopy.describe();
+myCountryCopy.checkIsland();
