@@ -83,3 +83,26 @@ const percentages = [
     percentageOfWorld(214),
 ];
 console.log(percentages);
+
+//// LECTURE: Basic Array Operations (Methods)
+console.log('**LECTURE: Basic Array Operations (Methods)**');
+
+const neighbours = ['Greece', 'Bulgaria', 'Azerbaijan', 'Georgia'];
+
+//Add element
+neighbours.push('Utopia');
+console.log(neighbours);
+
+//Delete element
+neighbours.pop();
+console.log(neighbours);
+
+//Search element
+if (!neighbours.includes('Germany')) {
+    console.log('Probably not a central European country :D');
+}
+
+//Search element and change name
+console.log(neighbours.indexOf('Azerbaijan'));
+neighbours[2] = 'Republic of Azerbaijan';
+console.log(neighbours);
