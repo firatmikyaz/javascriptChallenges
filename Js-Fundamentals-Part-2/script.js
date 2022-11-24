@@ -35,3 +35,15 @@ const popChina = percentageOfWorld2(1441);
 console.log(
     `Finland: ${popFinland}, Turkey: ${popTurkey}, England: ${popEngland} and China: ${popChina}`,
 );
+
+//// LECTURE: Arrow Function
+console.log('**LECTURE: Arrow Function**');
+
+// Arrow Function
+const percentageOfWorld3 = (population) => {
+    population = ((population / 7900) * 100).toFixed(1);
+    return `${population}%`;
+};
+
+const popChina1 = percentageOfWorld2(1441);
+console.log(`China: ${popChina}`);

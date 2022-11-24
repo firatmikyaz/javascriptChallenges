@@ -27,3 +27,10 @@
 4. Create a function expression which does the exact same thing, called
    'percentageOfWorld2', and also call it with 3 country populations (can be
    the same populations)
+
+## LECTURE: Arrow Functions
+
+### Your tasks:
+
+1. Recreate the last assignment, but this time create an arrow function called
+   'percentageOfWorld3'
