@@ -47,3 +47,25 @@ const percentageOfWorld3 = (population) => {
 
 const popChina1 = percentageOfWorld2(1441);
 console.log(`China: ${popChina}`);
+
+//// LECTURE: Functions Calling Other Functions
+console.log('**LECTURE: Functions Calling Other Functions**');
+
+const percentageOfWorld = function (population) {
+    population = ((population / 7900) * 100).toFixed(1);
+    return `${population}%`;
+};
+
+function describePopulation(country, population) {
+    const percentWorld = percentageOfWorld2(population);
+    return `${country} has ${population} million people, which is about ${percentWorld} of the world.`;
+}
+
+const popGermany = describePopulation('Germany', 67);
+const popBrazil = describePopulation('Brazil', 214);
+const popNetherlands = describePopulation('Netherlands', 67);
+console.log(
+    `${popGermany},
+    ${popBrazil},
+    ${popNetherlands}`,
+);
