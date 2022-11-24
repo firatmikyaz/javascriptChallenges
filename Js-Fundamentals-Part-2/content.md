@@ -77,3 +77,11 @@
    index of the country in the 'neighbours' array, and then use that index to
    change the array at that index position. For example, you can search for
    'Sweden' in the array, and then replace it with 'Republic of Sweden'
+
+## LECTURE: Introduction to Objects
+
+### Your tasks:
+
+1. Create an object called 'myCountry' for a country of your choice, containing
+   properties 'country', 'capital', 'language', 'population' and
+   'neighbours' (an array like we used in previous assignments)

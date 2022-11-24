@@ -106,3 +106,15 @@ if (!neighbours.includes('Germany')) {
 console.log(neighbours.indexOf('Azerbaijan'));
 neighbours[2] = 'Republic of Azerbaijan';
 console.log(neighbours);
+
+//// LECTURE: Introduction to Objects
+console.log('**LECTURE: Introduction to Objects**');
+
+const myCountry = {
+    country: 'Turkey',
+    capital: 'Ankara',
+    language: 'Turkish',
+    population: 80,
+    neighbours: ['Greece', 'Bulgaria', 'Azerbaijan', 'Georgia'],
+};
+console.log(myCountry);
