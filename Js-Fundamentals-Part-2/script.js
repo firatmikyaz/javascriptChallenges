@@ -12,3 +12,26 @@ const describeEngland = describeCountry('England', 67, 'London');
 console.log(`${describeFinland},
 ${describeTurkey},
 ${describeEngland}`);
+
+//// LECTURE: Function Declarations vs. Expressions
+console.log('**LECTURE: Function Declarations vs. Expressions**');
+
+//Function Decleration
+function percentageOfWorld1(population) {
+    population = ((population / 7900) * 100).toFixed(1);
+    return `${population}%`;
+}
+//Function Expression
+const percentageOfWorld2 = function (population) {
+    population = ((population / 7900) * 100).toFixed(1);
+    return `${population}%`;
+};
+
+const popFinland = percentageOfWorld1(6);
+const popTurkey = percentageOfWorld1(80);
+const popEngland = percentageOfWorld1(67);
+const popChina = percentageOfWorld2(1441);
+
+console.log(
+    `Finland: ${popFinland}, Turkey: ${popTurkey}, England: ${popEngland} and China: ${popChina}`,
+);
