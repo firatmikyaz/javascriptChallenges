@@ -69,3 +69,17 @@ console.log(
     ${popBrazil},
     ${popNetherlands}`,
 );
+
+//// LECTURE: Introduction to Arrays
+console.log('**LECTURE: Introduction to Arrays**');
+
+const populations = [6, 80, 1441, 214];
+console.log(populations.length > 0);
+
+const percentages = [
+    percentageOfWorld(6),
+    percentageOfWorld(80),
+    percentageOfWorld(1441),
+    percentageOfWorld(214),
+];
+console.log(percentages);
