@@ -186,3 +186,19 @@ const newArr = percentages2.filter((element) => percentages.includes(element));
 if (percentages2.length === percentages.length) {
     console.log(`${newArr} same values`);
 }
+
+//// LECTURE: Looping Backwards and Loops in Loops
+console.log('**LECTURE: Looping Backwards and Loops in Loops**');
+
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia'],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    console.log(listOfNeighbours[i]);
+    for (let j = 0; j < listOfNeighbours[i].length; j++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+    }
+}
