@@ -155,3 +155,16 @@ const myCountryCopy = {
 
 myCountryCopy.describe();
 myCountryCopy.checkIsland();
+
+//// LECTURE: Iteration: The for Loop
+console.log('**LECTURE: Iteration: The for Loop**');
+
+// 50 seçmen için yazılacak olan for loop ifasesi
+// for (let i = 1; i <= 50; i++) {
+//     console.log(`Voter number ${i} is currently voting`);
+// }
+
+// Console ekranında daha az yer kaplaması için sadece 3 seçmen kullanacağım.
+for (let i = 1; i <= 3; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
