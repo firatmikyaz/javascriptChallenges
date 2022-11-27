@@ -73,8 +73,8 @@ console.log(
 //// LECTURE: Introduction to Arrays
 console.log('**LECTURE: Introduction to Arrays**');
 
-const populations = [6, 80, 1441, 214];
-console.log(populations.length > 0);
+// const populations = [6, 80, 1441, 214];
+// console.log(populations.length > 0);
 
 const percentages = [
     percentageOfWorld(6),
@@ -82,7 +82,7 @@ const percentages = [
     percentageOfWorld(1441),
     percentageOfWorld(214),
 ];
-console.log(percentages);
+// console.log(percentages);
 
 //// LECTURE: Basic Array Operations (Methods)
 console.log('**LECTURE: Basic Array Operations (Methods)**');
@@ -167,4 +167,22 @@ console.log('**LECTURE: Iteration: The for Loop**');
 // Console ekranında daha az yer kaplaması için sadece 3 seçmen kullanacağım.
 for (let i = 1; i <= 3; i++) {
     console.log(`Voter number ${i} is currently voting`);
+}
+
+//// LECTURE: Looping Arrays, Breaking and Continuing
+console.log('**LECTURE: Looping Arrays, Breaking and Continuing**');
+
+const populations = [6, 80, 1441, 214];
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+    //console.log(populations[i]);
+    percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
+const newArr = percentages2.filter((element) => percentages.includes(element));
+
+if (percentages2.length === percentages.length) {
+    console.log(`${newArr} same values`);
 }
