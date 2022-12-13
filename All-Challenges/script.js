@@ -57,11 +57,12 @@ if (markHigherBMI) {
 }
 */
 
+/*
 // Coding Challenges #3
 
 // Data 1
-const avegareDolphins = (96 + 108 + 89) / 3;
-const averageKoalas = (88 + 91 + 110) / 3;
+// const avegareDolphins = (96 + 108 + 89) / 3;
+// const averageKoalas = (88 + 91 + 110) / 3;
 
 // Bonus 1
 // const avegareDolphins = (97 + 112 + 101) / 3;
@@ -70,6 +71,7 @@ const averageKoalas = (88 + 91 + 110) / 3;
 // Bonus 2
 // const avegareDolphins = (97 + 112 + 101) / 3;
 // const averageKoalas = (109 + 95 + 106) / 3;
+
 
 console.log('---------- Task 1');
 console.log(
@@ -108,13 +110,14 @@ if (avegareDolphins > averageKoalas && avegareDolphins >= 100) {
 } else {
     console.log('No one wins the thorpy 😭');
 }
+*/
 
+/*
 // Coding Challenges #4
 
 // Data 1
 // Test for bill values 275, 40 and 430
 console.log('---------- Task 1');
-
 const tip = 500;
 
 ////// Solution with if-else statement
@@ -141,3 +144,34 @@ console.log(
               tip + tip * 0.2
           }`,
 );
+*/
+
+// Coding Challenges #5
+
+/*
+Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+*/
+
+const calcAverage = (p1, p2, p3) => (p1 + p2 + p3) / 3;
+
+// Data 1
+// const averageDolphins = calcAverage(44, 23, 71); // 46
+// const averageKoalas = calcAverage(65, 54, 49); // 56
+
+// Data 2
+const averageDolphins = calcAverage(85, 54, 71); // 70
+const averageKoalas = calcAverage(23, 34, 27); // 28
+//console.log(averageDolphins, averageKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) {
+        console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= avgDolphins * 2) {
+        console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log(`no team wins! 😭`);
+    }
+};
+
+checkWinner(averageDolphins, averageKoalas);
