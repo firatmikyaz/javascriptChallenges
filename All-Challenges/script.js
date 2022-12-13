@@ -57,7 +57,7 @@ if (markHigherBMI) {
 }
 */
 
-// Coding Challenges #2
+// Coding Challenges #3
 
 // Data 1
 const avegareDolphins = (96 + 108 + 89) / 3;
@@ -108,3 +108,36 @@ if (avegareDolphins > averageKoalas && avegareDolphins >= 100) {
 } else {
     console.log('No one wins the thorpy 😭');
 }
+
+// Coding Challenges #4
+
+// Data 1
+// Test for bill values 275, 40 and 430
+console.log('---------- Task 1');
+
+const tip = 500;
+
+////// Solution with if-else statement
+// if (tip >= 50 && tip <= 300) {
+//     console.log(
+//         `The bill was ${tip}, the tip was ${tip * 0.15}, and the total value ${
+//             tip + tip * 0.15
+//         }`,
+//     );
+// } else if (tip > 300) {
+//     console.log(
+//         `The bill was ${tip}, the tip was ${tip * 0.2}, and the total value ${
+//             tip + tip * 0.2
+//         }`,
+//     );
+// }
+
+console.log(
+    tip >= 50 && tip <= 300
+        ? `The bill was ${tip}, the tip was ${
+              tip * 0.15
+          }, and the total value ${tip + tip * 0.15}`
+        : `The bill was ${tip}, the tip was ${tip * 0.2}, and the total value ${
+              tip + tip * 0.2
+          }`,
+);
