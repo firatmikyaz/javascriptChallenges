@@ -178,6 +178,7 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 checkWinner(averageDolphins, averageKoalas);
 */
 
+/*
 // Coding Challenges #6
 
 const calcTip = function (bill) {
@@ -189,3 +190,33 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]; // creat
 // console.log(tips);
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
+*/
+
+// Coding Challenges #7
+//BMI calculate : BMI = mass / height ** 2
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    },
+};
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    },
+};
+
+console.log(
+    mark.calcBMI() > john.calcBMI()
+        ? `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`
+        : `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`,
+);
